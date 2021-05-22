@@ -36,7 +36,7 @@
 
 
 
-        eliminar plugins
+       <!-- eliminar plugins-->
         <!-- Plugin for the momentJs  -->
         <script src="{{ asset('js/plugins/moment.min.js') }}"></script>
         <!--  Plugin for Sweet Alert -->

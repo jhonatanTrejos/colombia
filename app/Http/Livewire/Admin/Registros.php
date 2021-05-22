@@ -23,16 +23,17 @@ class Registros extends Component
     {
     	$registros = Registro::where(function ($query) {
                        $query->where('numero_cedula', 'like', '%'.$this->search.'%')
-                       ->orWhere('nombre_empleado', 'like', '%'.$this->search.'%')
-                       ->orWhere('apellidos_empleado', 'like', '%'.$this->search.'%')
-                       ->orWhere('cargo', 'like', '%'.$this->search.'%')
-                       ->orWhere('fecha_inicio', 'like', '%'.$this->search.'%')
-                       ->orWhere('fecha_retiro', 'like', '%'.$this->search.'%')
-                       ->orWhere('dias_laborados', 'like', '%'.$this->search.'%')
-                       ->orWhere('sueldo', 'like', '%'.$this->search.'%')
-                       ->orWhere('caja_compensacion', 'like', '%'.$this->search.'%')
-                       ->orWhere('cpsm', 'like', '%'.$this->search.'%')
-                       ->orWhere('ley100', 'like', '%'.$this->search.'%');
+                       //->orWhere('nombre_empleado', 'like', '%'.$this->search.'%')
+                       //->orWhere('apellidos_empleado', 'like', '%'.$this->search.'%')
+                       //->orWhere('cargo', 'like', '%'.$this->search.'%')
+                       //->orWhere('fecha_inicio', 'like', '%'.$this->search.'%')
+                       //->orWhere('fecha_retiro', 'like', '%'.$this->search.'%')
+                       //->orWhere('dias_laborados', 'like', '%'.$this->search.'%')
+                       //->orWhere('sueldo', 'like', '%'.$this->search.'%')
+                       //->orWhere('caja_compensacion', 'like', '%'.$this->search.'%')
+                       //->orWhere('cpsm', 'like', '%'.$this->search.'%')
+                       //->orWhere('ley100', 'like', '%'.$this->search.'%');
+                       ;
                  })
                 ->orderBy($this->orderBy, $this->orderAsc ? 'asc' : 'desc')
                 ->paginate($this->perPage); 

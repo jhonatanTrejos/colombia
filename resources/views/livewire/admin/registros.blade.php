@@ -25,7 +25,7 @@
 											
 										</div>
 										<div class="col-auto">
-											 <input class="btn btn-primary" type="submit" value="buscar">
+											{{-- <!--<input class="btn btn-primary" type="submit" value="buscar">-->--}}
 										</div>
 									</div>
 									
@@ -77,14 +77,14 @@
 													<a href="{{route('registro.edit',$registro->id)}}" class="btn btn-warning ">
 														<i class="material-icons">edit</i>
 													</a>
-													{{--    <form action="{{route('registro.delete',$registro->id)}}" method="POST" style="display: inline-block;"
+													{{-- <!--   <form action="{{route('registro.delete',$registro->id)}}" method="POST" style="display: inline-block;"
 														onsubmit=return confirmation('¿Esta seguro que desea eliminar este Registro?')>
 														@csrf
 														@method('DELETE')
 														<button class="btn btn-danger" type="submit">
 														<i class="material-icons">delete</i>
 														</button>
-													</form> --}}
+													</form>--> --}}
 												</td>
 												<td class="td-actions">
 													<a href="" class="btn btn-danger" wire:click.prevent="$emit('eliminarRegistros','Seguro que deseas eliminar este Usuario?','eliminarRegistro', {{ $registro->id }})" >
