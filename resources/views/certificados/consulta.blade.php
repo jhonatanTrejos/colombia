@@ -4,7 +4,7 @@
     <div class="card">
     <div class="card-body">
       <h2 class="text-center font-weight-bold text-danger">Certificados</h2>
-      <table class="table-striped table" style="position: absolute; z-index:10;">
+      <table class="table-striped table">
         <thead>
           <tr>
             <th>ID</th>
